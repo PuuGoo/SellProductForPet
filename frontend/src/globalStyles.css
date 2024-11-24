@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Design System Colors */
+:root {
+  /* Primary Color */
+  --primaryColor-gray-900: #111827;
+  --primaryColor-gray-800: #1f2937;
+  --primaryColor-gray-700: #374151;
+  --primaryColor-gray-600: #4b5563;
+  --primaryColor-gray-500: #6b7280;
+  --primaryColor-gray-400: #9ca3af;
+  --primaryColor-gray-300: #d1d5db;
+  --primaryColor-gray-200: #e5e7eb;
+  --primaryColor-gray-100: #f3f4f6;
+  --primaryColor-gray-white: #ffffff;
+
+  --primaryColor-primary-900: #f5b634;
+  --primaryColor-primary-800: #f6c146;
+  --primaryColor-primary-700: #f7c750;
+  --primaryColor-primary-600: #f8cd5a;
+  --primaryColor-primary-500: #f9d262;
+  --primaryColor-primary-400: #fad97a;
+  --primaryColor-primary-300: #fbe091;
+  --primaryColor-primary-200: #fce9b1;
+  --primaryColor-primary-100: #fdf2d0;
+  --primaryColor-primary-50: #fefaec;
+
+  --primaryColor-primary1-900: #062e22;
+  --primaryColor-primary1-800: #0c3f32;
+  --primaryColor-primary1-700: #10483a;
+  --primaryColor-primary1-600: #135243;
+  --primaryColor-primary1-500: #165a4a;
+  --primaryColor-primary1-400: #397365;
+  --primaryColor-primary1-300: #5c8c80;
+  --primaryColor-primary1-200: #8bada5;
+  --primaryColor-primary1-100: #b9cec9;
+  --primaryColor-primary1-50: #e3ebe9;
+
+  --primaryColor-error-900: #4a0e06;
+  --primaryColor-error-800: #5d170b;
+  --primaryColor-error-700: #671d0e;
+  --primaryColor-error-600: #722312;
+  --primaryColor-error-500: #7a2714;
+  --primaryColor-error-400: #8e4737;
+  --primaryColor-error-300: #a2685b;
+  --primaryColor-error-200: #bd938a;
+  --primaryColor-error-100: #d7beb9;
+  --primaryColor-error-50: #efe5e3;
+
+  --primaryColor-warning-900: #641600;
+  --primaryColor-warning-800: #762300;
+  --primaryColor-warning-700: #802a00;
+  --primaryColor-warning-600: #8b3100;
+  --primaryColor-warning-500: #933700;
+  --primaryColor-warning-400: #a35526;
+  --primaryColor-warning-300: #b3734d;
+  --primaryColor-warning-200: #c99b80;
+  --primaryColor-warning-100: #dfc3b3;
+  --primaryColor-warning-50: #f2e7e0;
+
+  --primaryColor-success-900: #17460a;
+  --primaryColor-success-800: #245911;
+  --primaryColor-success-700: #2b6315;
+  --primaryColor-success-600: #326e1a;
+  --primaryColor-success-500: #38761d;
+  --primaryColor-success-400: #568b3f;
+  --primaryColor-success-300: #749f61;
+  --primaryColor-success-200: #749f61;
+  --primaryColor-success-100: #c3d6bb;
+  --primaryColor-success-50: #e7efe4;
+
+  /* Secondary Color */
+  --secondaryColor-blue-900: #518dd9;
+  --secondaryColor-blue-800: #649ddf;
+  --secondaryColor-blue-700: #6ea5e3;
+  --secondaryColor-blue-600: #79aee6;
+  --secondaryColor-blue-500: #81b5e9;
+  --secondaryColor-blue-400: #94c0ec;
+  --secondaryColor-blue-300: #a7cbf0;
+  --secondaryColor-blue-200: #c0daf4;
+  --secondaryColor-blue-100: #d9e9f8;
+  --secondaryColor-blue-50: #f0f6fc;
+
+  --secondaryColor-green-900: #8cb949;
+  --secondaryColor-green-800: #9cc35c;
+  --secondaryColor-green-700: #a4c966;
+  --secondaryColor-green-600: #adcf71;
+  --secondaryColor-green-500: #b4d479;
+  --secondaryColor-green-400: #bfda8d;
+  --secondaryColor-green-300: #cbe1a1;
+  --secondaryColor-green-200: #daeabc;
+  --secondaryColor-green-100: #e9f2d7;
+  --secondaryColor-green-50: #f6faef;
+
+  --secondaryColor-red-900: #db5359;
+  --secondaryColor-red-800: #e1666c;
+  --secondaryColor-red-700: #e47076;
+  --secondaryColor-red-600: #e77b81;
+  --secondaryColor-red-500: #ea8389;
+  --secondaryColor-red-400: #ed969b;
+  --secondaryColor-red-300: #f0a8ac;
+  --secondaryColor-red-200: #f5c1c4;
+  --secondaryColor-red-100: #f9dadc;
+  --secondaryColor-red-50: #fcf0f1;
+
+  --secondaryColor-purple-900: #c87fe4;
+  --secondaryColor-purple-800: #d190e8;
+  --secondaryColor-purple-700: #d599eb;
+  --secondaryColor-purple-600: #daa3ed;
+  --secondaryColor-purple-500: #deaaef;
+  --secondaryColor-purple-400: #e3b7f1;
+  --secondaryColor-purple-300: #e8c4f4;
+  --secondaryColor-purple-200: #efd5f7;
+  --secondaryColor-purple-100: #f5e6fa;
+  --secondaryColor-purple-50: #fbf5fd;
+}
+
+/* Design System Typography */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.display-1,
+.display-2 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: var(--primaryColor-gray-900);
+}
+
+.h1 {
+  font-size: 40px;
+}
+
+.h2 {
+  font-size: 32px;
+}
+
+.h3 {
+  font-size: 28px;
+}
+
+.h4 {
+  font-size: 24px;
+}
+
+.h5 {
+  font-size: 20px;
+}
+
+.h6 {
+  font-size: 16px;
+}
+
+.display-1 {
+  font-size: 48px;
+}
+
+.display-2 {
+  font-size: 56px;
+}
+
+.body-extra-large,
+.body-large,
+.body-medium,
+.body-small,
+.body-extra-small,
+.body-more-extra-small {
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  color: var(--primaryColor-gray-900);
+}
+
+.body-bold-extra-large,
+.body-bold-large,
+.body-bold-medium,
+.body-bold-small,
+.body-bold-extra-small,
+.body-bold-more-extra-small {
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: var(--primaryColor-gray-900);
+}
+
+.body-strikeThrough-extra-large,
+.body-strikeThrough-large,
+.body-strikeThrough-medium,
+.body-strikeThrough-small,
+.body-strikeThrough-extra-small,
+.body-strikeThrough-more-extra-small {
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif;
+  text-decoration: line-through;
+  color: var(--primaryColor-gray-900);
+}
+
+.body-extra-large,
+.body-bold-extra-large {
+  font-size: 22px;
+}
+
+.body-large,
+.body-bold-large {
+  font-size: 18px;
+}
+
+.body-medium,
+.body-bold-medium {
+  font-size: 16px;
+}
+
+.body-small,
+.body-bold-small {
+  font-size: 14px;
+}
+
+.body-extra-small,
+.body-bold-extra-small {
+  font-size: 12px;
+}
+
+.body-more-extra-small,
+.body-bold-more-extra-small {
+  font-size: 8px;
+}
+
+.button-large,
+.button-medium,
+.button-small {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: var(--primaryColor-gray-900);
+}
+
+.button-large {
+  font-size: 18px;
+}
+
+.button-medium {
+  font-size: 16px;
+}
+
+.button-small {
+  font-size: 14px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.container {
+  padding: 0 102px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+    width: 768px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 16px;
+    width: 576px;
+  }
+}

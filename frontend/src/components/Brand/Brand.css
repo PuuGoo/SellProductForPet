@@ -1,0 +1,15 @@
+.brands-product {
+    padding: 0 6vmax;
+}
+
+.brands-product-wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 16px;
+}
+
+.brands-product-wrapper img {
+    width: 100%;
+    height: 218px;
+}
+

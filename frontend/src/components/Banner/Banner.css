@@ -1,0 +1,97 @@
+.banner-mess-sale {
+  width: 100%;
+}
+
+.banner-messSale-wrapper {
+  background-color: #fdf2d0;
+  height: 300px;
+
+  position: relative;
+}
+
+.banner-messSale-info {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  position: absolute;
+  top: 48px;
+  left: 93px;
+}
+
+.banner-messSale-img img {
+  width: 524px;
+  height: 300px;
+
+  position: absolute;
+  left: 582px;
+}
+
+.icon-slider-left .button,
+.icon-slider-right .button {
+  border-radius: 50%;
+}
+
+.icon-slider-left,
+.icon-slider-right {
+  position: absolute;
+
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-slider-left {
+  left: 0;
+  top: 0;
+}
+
+.icon-slider-right {
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .banner-messSale-wrapper {
+    max-height: 248px;
+  }
+
+  .banner-messSale-info {
+    top: 24px;
+    left: 32px;
+  }
+
+  .banner-messSale-img img {
+    width: 315px;
+    height: 196px;
+
+    left: 372px;
+    top: 24px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner-mess-sale {
+    width: 576px;
+  }
+  .banner-messSale-wrapper {
+    max-height: 238px;
+  }
+
+  .banner-messSale-info {
+    max-width: 250px;
+
+    top: 16px;
+    left: 32px;
+  }
+
+  .banner-messSale-img img {
+    width: 228px;
+    height: 183px;
+
+    left: 284px;
+    top: 24px;
+  }
+}

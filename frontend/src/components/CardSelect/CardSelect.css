@@ -1,0 +1,31 @@
+.card-select {
+  padding: 0 6vmax;
+}
+
+.card-select .card-components {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgb(196, 194, 194);
+}
+
+.card-components .card-component {
+  display: flex;
+  flex-direction: column;
+
+  padding: 3vmax 2vmax;
+}
+
+.card-component span {
+  font-weight: bold;
+  font-size: 1.4vmax;
+}
+
+.card-component .card-title {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+
+  font-size: 1.4vmax;
+}

@@ -1,0 +1,267 @@
+.footer {
+  /* padding-top: 2vmax; */
+
+  padding-top: 40px;
+
+  width: 1440px;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+.contact {
+  background-color: #f5b634;
+  height: 96px;
+}
+
+.contact .contact-catalog {
+  padding: 0 102px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-catalog .contact-catalog-component1 {
+  display: flex;
+  gap: 192px;
+  align-items: center;
+}
+
+.contact-catalog-component1 .contact-catalog-available {
+  padding: 16px 0;
+}
+
+.contact-catalog-component1 .contact-catalog-infoContact {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.contact-catalog-infoContact .contact {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-catalog-component2 .button-contact {
+  border-radius: 900px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  background-color: #f9d262;
+}
+
+.button-contact svg {
+  width: 24px;
+  height: 24px;
+}
+
+.about {
+  padding: 24px 0;
+}
+
+.about .about-catalogs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-catalogs .about-catalog {
+  display: flex;
+  gap: 40px;
+}
+
+.about-catalogs .about-social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-social svg {
+  width: 24px;
+  height: 24px;
+}
+
+.app-dowload {
+  padding: 24px 0;
+}
+
+.app-dowload .app-catalog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.app-catalog img {
+  height: 100%;
+}
+
+.policy {
+  padding: 24px 0;
+}
+
+.policy .polycy_catalog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.policy .polycy-private {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+  .footer .contact {
+    width: 768px !important;
+  }
+
+  .contact-catalog-component1 {
+    gap: 32px !important;
+  }
+
+  .contact-catalog {
+    padding: 0 24px !important;
+  }
+
+  .contact-catalog-available {
+    width: 124px;
+  }
+
+  .contact-catalog-infoContact {
+    width: 422px;
+    gap: 4px !important;
+  }
+
+  .contact-catalog-infoContact .contact {
+    justify-content: center;
+  }
+
+  .button-contact {
+    height: 40px;
+
+    padding: 8px 12px;
+  }
+
+  .about-catalogs {
+    flex-direction: column;
+    gap: 16px !important;
+  }
+
+  .about-catalog {
+    font-size: 14px !important;
+    gap: 24px !important;
+  }
+
+  .icon-social svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .policy .polycy_catalog {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    padding: 0 48px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    display: none;
+    width: 576px;
+  }
+  .footer-mobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+
+    padding-top: 40px !important;
+    width: 576px;
+  }
+  .contact {
+    max-width: 576px !important;
+    background-color: var(--primaryColor-gray-while);
+  }
+
+  .contact-catalog {
+    width: 576px !important;
+    justify-content: center !important;
+  }
+
+  .contact-catalog-component2 .button-contact {
+    height: 48px;
+    width: 200px;
+    padding: 12px 20px;
+
+    background-color: var(--primaryColor-primary-200);
+  }
+
+  .app-dowload {
+    background-color: var(--primaryColor-primary-900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .app-dowload .app-catalog {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dowload-list {
+    width: 159px;
+  }
+
+  .contact-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--primaryColor-gray-100);
+
+    border-bottom: 1px solid var(--primaryColor-gray-500);
+
+    padding: 16px 0;
+  }
+
+  .info-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .ic-item {
+    display: flex;
+    gap: 32px;
+  }
+
+  .polycy-private {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

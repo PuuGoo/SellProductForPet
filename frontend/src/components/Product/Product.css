@@ -1,0 +1,154 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.popular-categories {
+  padding: 0 6vmax;
+}
+
+.popular-categories h2 {
+  padding-top: 2vmax;
+  padding-bottom: 1vmax;
+}
+
+.popular-categories .popular-category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-category img {
+  border-radius: 50%;
+
+  width: 10vmax;
+}
+
+.popular-category .category-list {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.category-list h3 {
+  padding: 0.5vmax 0;
+  font-size: 1.2vmax;
+
+  font-weight: lighter;
+}
+
+/* Favourite Product */
+
+.fav-products {
+  margin: 0 6vmax;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 16px;
+  margin-bottom: 24px;
+}
+
+.fav-product {
+  padding: 0 16px 32px 16px;
+  border: 2px solid #eeeeee;
+  /* margin-right: 16px; */
+  border-radius: 8px;
+}
+
+.fav-image {
+  background-color: #f7f7f7;
+  /* max-width: fit-content; */
+  margin-bottom: 20px;
+
+  width: 170px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fav-product img {
+  mix-blend-mode: multiply;
+  width: 9vmax;
+  height: 9vmax;
+  padding: 25px 50px;
+}
+
+.fav-product .fav-name {
+  max-width: 230px;
+  margin-bottom: 8px;
+}
+
+.fav-product .fav-program-discount {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #165A4A;
+
+  color: white;
+  font-size: 12px;
+
+  margin-top: 16px;
+}
+
+.fav-name span {
+  font-weight: bold;
+}
+
+.fav-product .fav-author span {
+  font-weight: bold;
+  color: blue;
+}
+
+.fav-product .fav-rating {
+  padding-bottom: 4px;
+}
+
+.fav-product .fav-price {
+  color: red;
+  font-weight: bold;
+}
+
+.filterByPet ,
+.exploreMores{
+  padding: 0 6vmax;
+}
+
+.filterByPet .filterByPet-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filterByPet-wrapper img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 0.5vmax 0;
+}
+
+.filterByPet-wrapper p {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.exploreMore-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(228px, 1fr));
+  grid-gap: 16px;
+
+  padding-bottom: 50px;
+}
+
+.exploreMore {
+  width: 170px;
+}
+
+.exploreMore img {
+  width: 170px;
+  height: 170px;
+}
+
+.exploreMore p {
+  text-align: center;
+  padding-top: 4px;
+}
+
+

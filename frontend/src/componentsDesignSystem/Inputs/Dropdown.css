@@ -1,0 +1,30 @@
+.L {
+  width: 320px;
+  height: 46px;
+
+  padding: 8px;
+}
+
+.M {
+  width: 320px;
+  height: 38px;
+
+  padding: 4px;
+}
+
+.S {
+  width: 320px;
+  height: 30px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.dropdown select {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}

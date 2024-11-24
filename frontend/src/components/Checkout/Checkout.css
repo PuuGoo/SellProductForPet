@@ -1,0 +1,300 @@
+.checkout {
+  width: 1440px;
+  padding-top: 80px;
+}
+
+.checkout-wrapper {
+  width: 1440px;
+
+  display: flex;
+  gap: 48px;
+
+  padding: 0 210px;
+}
+
+.cl-address {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+
+  width: 501px;
+
+  border-radius: 8px;
+  border: 1px solid var(--primaryColor-gray-300);
+}
+
+.cla-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.cla-form-another {
+  display: flex;
+  gap: 8px;
+}
+
+.cla-form-another select {
+  border-radius: 8px !important;
+  border: 1px solid var(--primaryColor-gray-300) !important;
+}
+
+.checkout-left {
+  display: flex;
+  flex-direction: column;
+
+  gap: 80px;
+}
+
+.cl-items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 501px;
+
+  border-radius: 8px;
+  border: 1px solid var(--primaryColor-gray-300);
+
+  padding: 16px 0;
+}
+
+.cl-items .h3 {
+  width: 501px;
+  padding: 0 16px;
+}
+
+.cl-item,
+.cl-item .card,
+.cl-item .card-wrapper,
+.cl-item .card-horizontal {
+  width: 501px;
+}
+
+.cl-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cl-giftcard {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  padding: 16px;
+
+  border-radius: 8px;
+  border: 1px solid var(--primaryColor-gray-300);
+
+  width: 501px;
+}
+
+.cl-infoPayment {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  width: 501px;
+
+  border-radius: 8px;
+  border: 1px solid var(--primaryColor-gray-300);
+
+  padding: 16px;
+}
+
+.clip-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.clip-button-checkout {
+  width: 467px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkout-right {
+  padding: 16px;
+  border: 1px solid var(--primaryColor-gray-300);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 300px;
+  height: fit-content;
+}
+
+.cr-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cr-c-quantity,
+.cr-c-stateFreeship,
+.cr-c-beforeTax,
+.cr-c-estimated,
+.cr-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cr-btn-promoteCode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cr-btn-pc-button .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .checkout {
+    padding-top: 64px !important;
+  }
+  .checkout,
+  .checkout-wrapper {
+    width: 768px;
+  }
+
+  .checkout-wrapper {
+    padding: 0 24px;
+  }
+
+  .checkout-left,
+  .cl-address {
+    width: 472px;
+  }
+
+  .cla-title,
+  .cla-form,
+  .cla-form .placeholder .L {
+    width: 440px !important;
+  }
+
+  .cla-form-another {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cla-form-another .L {
+    width: 440px !important;
+  }
+
+  .cla-button .button {
+    width: 331px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cl-items,
+  .cl-items h3,
+  .cl-item,
+  .cl-item .card,
+  .cl-giftcard,
+  .cl-infoPayment {
+    width: 472px !important;
+  }
+
+  .clip-button-checkout {
+    width: 438px !important;
+  }
+
+  .checkout-wrapper {
+    gap: 24px !important;
+  }
+  .checkout-right {
+    width: 224px !important;
+  }
+  .cr-btn-pc-input .L {
+    width: 109px !important;
+  }
+  .cr-btn-pc-button .button {
+    width: 67px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .checkout {
+    width: 576px !important;
+    padding-top: 48px !important;
+  }
+
+  .checkout-wrapper {
+    width: 576px !important;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 48px !important;
+  }
+
+  .checkout-left,
+  .cla-title,
+  .cla-form,
+  .cla-form .placeholder .L,
+  .cla-form-another .L,
+  .cla-button {
+    width: 512px !important;
+  }
+  .cl-address {
+    width: 544px !important;
+  }
+
+  .cl-items,
+  .cl-items .h3,
+  .cl-item,
+  .cl-item .card,
+  .cl-item .card-wrapper,
+  .cl-item .card-horizontal {
+    width: 544px !important;
+  }
+
+  .cl-item .card-image {
+    width: 234px !important;
+  }
+
+  .cl-giftcard,
+  .cl-infoPayment,
+  .checkout-right {
+    width: 544px !important;
+  }
+
+  .cr-btn-pc-input .placeholder .L {
+    width: 271px !important;
+  }
+
+  .cr-btn-pc-button .button {
+    width: 189px !important;
+  }
+
+  .clip-button-checkout {
+    display: none !important;
+  }
+
+  .clip-button-checkout-mobile {
+    display: block !important;
+
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    gap: 8px;
+
+    width: 544px;
+  }
+}

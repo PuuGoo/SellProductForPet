@@ -1,0 +1,37 @@
+.input-checkbox label {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.input-checkbox label {
+    margin-bottom: 8px;
+}
+
+.input-checkbox input:last-child {
+    margin-bottom: 0 !important;
+}
+.checkbox-L {
+  width: 24px;
+  height: 24px;
+}
+
+.checkbox-M {
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-S {
+  width: 16px;
+  height: 16px;
+}
+
+.ic-content {
+  display: flex;
+  align-items: center;
+}
+
+.ic-content svg{
+  margin-right: 4px;
+}
